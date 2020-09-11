@@ -3,13 +3,10 @@
 `yarn install`
 
 
-## Setup
+## Run traditional (compile)
 
-Add the following alias to your shell init:
+`yarn start`
 
-`alias tsnode="node -r @adonisjs/require-ts/build/register"`
+## Run require-ts (error)
 
-
-## Run
-
-`tsnode src/index.ts`
+`node -r @adonisjs/require-ts/build/register src/index.ts`

@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node lib/index.js",
+    "build": "rm -rf lib && tsc",
+    "prestart": "yarn build",
+    "tsnode": "node -r @adonisjs/require-ts/build/register src/index.ts"
+  },
   "devDependencies": {
     "@adonisjs/require-ts": "^1.0.0",
     "@types/node": "^14.10.1",
